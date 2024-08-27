@@ -1,0 +1,311 @@
+/**RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/**RESET*/
+/**GENERAL*/
+img {
+  width: 100%;
+  transition: all 0.6s;
+}
+
+.b-bold {
+  border-width: 0.7rem !important;
+}
+
+.icon {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.mini-icon {
+  width: 6rem;
+  height: 6rem;
+}
+
+.xs-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.section-title .bar {
+  height: 0.4rem;
+  width: 3rem;
+  background-color: #0078ff;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+/**GENERAL*/
+
+/**NAV*/
+nav h3 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.nav-item {
+  letter-spacing: 0.4px;
+}
+
+.navbar-nav .nav-underline {
+  position: relative;
+}
+
+.navbar-nav .nav-underline::before {
+  content: "";
+  width: 0;
+  height: 2.5px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: width 0.3s;
+}
+
+.navbar-nav .nav-underline:hover::before {
+  width: 77%;
+}
+
+.navbar-nav .active::before {
+  width: 77%;
+}
+
+.dropdown {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.ds {
+  display: none;
+  position: absolute;
+}
+
+.dropdown:hover .ds {
+  display: block;
+  top: 2.5rem;
+}
+
+.ds a:hover {
+  color: #0078ff;
+}
+
+.deep-drop {
+  position: relative;
+  transition: height 0.5s;
+}
+
+.scnd-drop {
+  display: none;
+  position: absolute;
+  left: 8rem;
+}
+
+.deep-drop:hover .scnd-drop {
+  display: block;
+  left: 6.3rem;
+}
+
+.deep-drop a:hover {
+  color: #0078ff;
+}
+
+/**NAV*/
+
+/**HOME*/
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.55)),
+    url(assets/images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#home .txt span {
+  font-size: 2.5rem;
+}
+
+/**HOME*/
+
+/**ABPUT*/
+.about {
+  position: relative;
+}
+
+.about .about-txt .title {
+  position: relative;
+}
+
+.about .about-txt .title::after {
+  content: " ";
+  position: absolute;
+  height: 4px;
+  width: 5em;
+  background-color: #0078ff;
+  top: 100%;
+}
+
+.about .about-txt .p-group>* {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.875rem;
+}
+
+.progress {
+  height: 0.7rem;
+}
+
+/**ABOUT*/
+
+/**SERVICE*/
+.services .content .card:hover .icon {
+  transition: all 0.5s;
+}
+
+.services .content .card:hover .icon {
+  background-color: #0078ff;
+  color: white;
+}
+
+/**border hover style */
+
+.services .content .card .border-primary {
+  transition: border-color 0.5s;
+}
+
+.services .content .card:hover .border-primary {
+  border-color: rgb(210, 223, 249) !important;
+}
+
+/**SERVICE*/
+
+/**INFO*/
+.info {
+  background: linear-gradient(rgba(0, 115, 255, 0.6), rgba(0, 115, 255, 0.7)),
+    url(assets/images/counters-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/**INFO*/
+
+/**PORTFOLIO*/
+.portfolio .content .card:hover img {
+  transform: scale(1.2);
+}
+
+/**PORTFOLIO*/
+
+/**CAROUSEL */
+.carousel .item img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.carousel {
+  background: linear-gradient(rgba(0, 115, 255, 0.6), rgba(0, 115, 255, 0.7)),
+    url(assets/images/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.carousel p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.875rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+/**CAROUSEL */
+
+/**BLOG */
+.card-footer img {
+  height: 2.3rem;
+  width: 2.3rem;
+}
+
+.blog .card a {
+  transition: 0.3s;
+}
+
+.blog .card a:hover {
+  color: #0078ff;
+}
+
+/**BLOG */
+
+/**FOOTER */
+.r-content .up p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.875rem;
+}
+
+.social:hover .xs-icon {
+  transition: all 0.5s;
+}
+
+.social:hover .xs-icon {
+  background-color: #0078ff;
+  color: white;
+}
+
+/**border hover style */
+.social .border-primary {
+  transition: border-color 0.5s;
+}
+
+.social:hover .border-primary {
+  border-color: rgb(210, 223, 249) !important;
+}
+
+.f-back {
+  background: linear-gradient(rgba(0, 115, 255, 0.6), rgba(0, 115, 255, 0.7)),
+    url(assets/images/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.f-title h2::after {
+  content: "";
+  width: 4em;
+  height: 4px;
+  background-color: #0078ff;
+  position: absolute;
+  top: 1.5em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer .btn {
+  transition: border-color 0.4s;
+}
+
+footer button:hover {
+  border-color: rgb(210, 223, 249) !important;
+}
+
+/**FOOTER */
